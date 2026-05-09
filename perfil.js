@@ -14,7 +14,7 @@
     try {
       if (!sessionStorage.getItem('perfilVisitou')) {
         sessionStorage.setItem('perfilVisitou', '1');
-        msgVisita.textContent = 'Obrigada por visitar este exemplo com JavaScript!';
+        msgVisita.textContent = 'Obrigado por visitar este exemplo com JavaScript!';
       } else {
         msgVisita.textContent = 'Bom ver você de novo nesta aba!';
       }
