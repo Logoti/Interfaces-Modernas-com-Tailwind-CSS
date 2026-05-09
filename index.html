@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur Cardoso Morais</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="perfil.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="perfil-hero">
+
+        <h1 id="topo">Artur Cardoso Morais</h1>
+
+        <nav class="perfil-hero__nav">
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Conteúdo principal -->
+    <main class="perfil-main">
+
+        <!-- Sobre mim -->
+        <section class="cartao" id="sobre">
+
+            <h2>Sobre mim</h2>
+
+            <p>
+                Sou estudante da UFU, gosto de estudar programação com o Gabriel.
+            </p>
+
+            <img
+                class="perfil-foto"
+                src="my'foto.png"
+                alt="Foto do Artur Cardoso Morais"
+            >
+
+        </section>
+
+
+        <!-- Habilidades -->
+        <section class="cartao" id="habilidades">
+
+            <h2>Habilidades</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer class="perfil-rodape" id="contato">
+
+        <h2>Contato</h2>
+
+        <table>
+
+            <caption>Onde me encontrar</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Rede</th>
+                    <th scope="col">Link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>GitHub</td>
+
+                    <td>
+                        <a href="https://github.com/Logoti"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            github.com/Logoti
+
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>E-mail</td>
+
+                    <td>
+                        <a href="mailto:artur.morais@ufu.br">
+
+                            artur.morais@ufu.br
+
+                        </a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>LinkedIn</td>
+
+                    <td>
+                        <a href="https://www.linkedin.com/in/artur-cardoso-morais-330865350/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            linkedin.com/in/artur-cardoso-morais-330865350
+
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <!-- Mensagem do JavaScript -->
+        <p id="msg-visita"></p>
+
+
+        <!-- Ano automático -->
+        <p>
+            &copy; <span id="rodape-ano"></span> Artur Cardoso Morais
+        </p>
+
+    </footer>
+
+
+    <!-- Botão voltar ao topo -->
+    <button
+        id="btn-voltar-topo"
+        class="btn-voltar-topo"
+        aria-label="Voltar ao topo"
+        hidden>
+
+        ↑
+
+    </button>
+
+</body>
+</html>

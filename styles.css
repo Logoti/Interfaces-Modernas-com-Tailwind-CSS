@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: aliceblue;
+    line-height: 1.6;
+    color: #111827;
+}
+
+
+header.perfil-hero {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background: #ecfdf5;
+    border-bottom: 1px solid #a7f3d0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar-topo {
+    position: fixed;
+    bottom: 1.35rem;
+    right: 1.35rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #047857;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(4, 120, 87, 0.45);
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    color: white;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#btn-voltar-topo:hover {
+    transform: scale(1.08);
+}
+
+.perfil-hero__nav a {
+    color: #065f46;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 0.4rem 0.95rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #a7f3d0;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+header.perfil-hero h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #065f46;
+    font-weight: 800;
+}
+
+/* Main */
+.perfil-main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+
+.cartao {
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    transition: box-shadow .25s, transform .25s;
+}
+
+.cartao:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,.15);
+    transform: translateY(-4px);
+}
+
+.cartao h2 {
+    margin: 0 0 0.75rem 0;
+    color: #065f46;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-left: 4px solid #10b981;
+    padding-left: 0.75rem;
+}
+
+.cartao p {
+    margin-bottom: 0.5rem; /* n aceita 4  */
+    color: #374151;
+}
+
+.cartao ul { 
+    color: #374151 
+}
+
+.perfil-foto {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    border-radius: 50%;
+    margin: 1rem auto 0;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.perfil-foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+
+.perfil-rodape {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.perfil-rodape > h2 {
+    color: #065f46;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+#contato table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+#contato caption {
+    caption-side: top;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+#contato thead th {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#contato tbody td {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid #e5e7eb;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#contato tbody tr:hover td {
+    background: #ecfdf5;
+}
+
+
+a {
+    color: #047857;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #065f46;
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
+}
