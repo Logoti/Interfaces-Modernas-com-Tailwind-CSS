@@ -1,7 +1,3 @@
-/**
- * Perfil — JavaScript básico (tutorial Módulo 3)
- * Ano dinâmico, mensagem com sessionStorage, botão voltar ao topo.
- */
 (function () {
   'use strict';
 
@@ -20,26 +16,30 @@
         sessionStorage.setItem('perfilVisitou', '1');
         msgVisita.textContent = 'Obrigada por visitar este exemplo com JavaScript!';
       } else {
-        msgVisita.textContent = 'Nesta aba do navegador você já abriu a página antes — os dados ficam só até fechar a aba.';
+        msgVisita.textContent = 'Bom ver você de novo nesta aba!';
       }
     } catch (err) {
-      msgVisita.textContent = '';
       msgVisita.style.display = 'none';
     }
   }
 
   if (btnTopo && alvoTopo) {
     function atualizaBotaoTopo() {
-      var scrollou = window.scrollY > 300;
-      btnTopo.hidden = !scrollou;
-      btnTopo.setAttribute('aria-hidden', scrollou ? 'false' : 'true');
+      var scrollou = window.scrollY > 100;
+      if (scrollou) {
+        btnTopo.removeAttribute('hidden');
+      } else {
+        btnTopo.setAttribute('hidden', '');
+      }
+      btnTopo.setAttribute('aria-hidden', !scrollou);
     }
 
-    atualizaBotaoTopo();
     window.addEventListener('scroll', atualizaBotaoTopo, { passive: true });
 
     btnTopo.addEventListener('click', function () {
       alvoTopo.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+
+    atualizaBotaoTopo();
   }
 })();
